@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+.news-list-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  font-family: "Arial", sans-serif; 
+}
+
+.news-title-container {
+  margin: 20px auto; 
+}
+
+.news-title-container h1 {
+  text-align: center; 
+  font-family: 'Dancing Script', cursive; 
+  font-size: 2.5em; 
+  color: #6A1E55; 
+  margin-bottom: 20px; 
+}
+
+.news-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.news-card {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  border-radius: 10px; 
+  padding: 20px;
+  text-align: center;
+  min-height: 380px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1); 
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2); 
+}
+
+.new-image {
+  width: 100%;
+  height: 300px; 
+  object-fit: cover;
+  image-rendering: crisp-edges;
+  border-radius: 8px; 
+  margin-bottom: 16px;
+  transition: transform 0.3s ease;
+}
+
+.news-card h2 {
+  font-size: 1.8em;
+  margin: 12px 0;
+  color: #333; 
+  height: auto;
+  overflow: hidden;
+  font-family: 'Dancing Script', cursive; 
+
+}
+
+.news-card p {
+  font-size: 0.95em;
+  color: #666;
+  margin-bottom: 12px;
+  line-height: 1.6; 
+  
+}
+
+.news-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.load-button {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.load-button button {
+  padding: 12px 25px;
+  background-color: #E32C89;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+}
+
+.load-button button:hover {
+  background-color: #8c2156;
+}

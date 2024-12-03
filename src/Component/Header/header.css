@@ -1,0 +1,145 @@
+/* Header Styles */
+.header {
+  background-color: #ebcee0;
+  padding: 10px 20px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column; 
+}
+
+
+.header-top {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  width: 100%;
+}
+
+.logo-container {
+  flex: 1;
+  text-align: left; 
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+}
+
+.links-container {
+  flex: 2; 
+  display: flex;
+  justify-content: center; 
+  gap: 40px; 
+  font-family: 'Times New Roman', Times, serif; 
+  margin: 0; 
+}
+.header-top .links-container button {
+  background: none;
+  border: none;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  letter-spacing: 1px;
+  margin-top: -1px;
+  font-family: 'Times New Roman', Times, serif; 
+
+}
+.header-top .links-container button:hover {
+  color: #E32C89;
+  text-decoration: underline;
+}
+
+.header-link {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  color: rgb(0, 0, 0); 
+  text-decoration: none;
+  transition: color 0.3s ease;
+  letter-spacing: 1px;
+}
+
+.header-link:hover {
+  color: #E32C89; 
+  text-decoration: underline; 
+}
+
+.icons-container {
+  flex: 1; 
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  margin-right: 60px;
+  border: none; 
+  background: none; 
+  padding: 0;
+  cursor: pointer; 
+}
+.icons-container button {
+  border: none; 
+  background: none; 
+  padding: 0; 
+  cursor: pointer; 
+}
+.icons-container .icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border: none;
+
+}
+.error-message {
+  color: red;
+  font-size: 12px;
+  position: absolute;
+  bottom: -55px; /* Đặt lỗi dưới cùng của input */
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 5px 15px;
+  max-width: 400px;
+  width: 250px;
+  /* Remove translation and fix positioning */
+  margin-top: -6px;  /* Adjusted to make it align */
+  z-index: 10;
+}
+
+/* Make search input take full width of the container */
+.search-input {
+  border: none;
+  outline: none;
+  padding: 8px 12px;
+  font-size: 16px;
+  width: 100%;
+  border-radius: 20px;
+}
+.cart-count {
+  position: absolute; /* Đặt vị trí tuyệt đối để dễ căn chỉnh */
+  top: -5px; /* Điều chỉnh vị trí dọc */
+  right: -5px; /* Điều chỉnh vị trí ngang */
+  background-color: red; /* Màu nền đỏ */
+  color: white; /* Màu chữ trắng */
+  border-radius: 50%; /* Tạo hình tròn */
+  width: 20px; /* Kích thước ngang của vòng tròn */
+  height: 20px; /* Kích thước dọc của vòng tròn */
+  display: flex; /* Sử dụng flex để căn giữa số */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  font-size: 12px; /* Kích thước chữ */
+  font-weight: bold; /* In đậm chữ */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Tạo bóng để nổi bật */
+}
